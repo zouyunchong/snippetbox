@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SnippetBox - Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #333; }
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.15em; margin-top: 2em; }
+  .date { color: #888; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>SnippetBox — Privacy Policy</h1>
+<p class="date">Last updated: June 8, 2026</p>
+
+<h2>Summary</h2>
+<p>SnippetBox stores your snippets and notes <strong>locally on your device</strong>. We do not operate our own backend for this extension and do not collect or sell your personal data.</p>
+
+<h2>What data is stored</h2>
+<p>SnippetBox stores the following in your browser's local IndexedDB database:</p>
+<ul>
+  <li>Saved snippets, including selected text in HTML, Markdown, and plain text formats</li>
+  <li>Snippet metadata, such as page title, URL, domain, timestamps, tags, category, and optional AI summary output</li>
+  <li>Notes you create in the built-in rich text editor, including HTML, Markdown, plain text, and timestamps</li>
+  <li>Optional local settings, such as import backups and AI summary configuration</li>
+</ul>
+
+<h2>Where data is stored</h2>
+<p>Your saved snippets, notes, and local settings are stored <strong>in your browser profile</strong>, primarily using IndexedDB and extension local storage.</p>
+
+<h2>Data collection by the developer</h2>
+<p>SnippetBox does <strong>not</strong> collect the following for the developer:</p>
+<ul>
+  <li>Analytics or usage data</li>
+  <li>Personal information</li>
+  <li>Browsing history</li>
+  <li>Cookies or tracking identifiers</li>
+</ul>
+
+<h2>Network requests</h2>
+<p>SnippetBox does not send your data to a developer-operated server.</p>
+<ul>
+  <li>Core snippet saving, notes, backup, restore, and local management features work locally in your browser.</li>
+  <li>If you choose to use the optional AI summary feature, the extension sends snippet content and related metadata directly to <strong>DeepSeek</strong> through the API key that you provide.</li>
+  <li>That request may include snippet title, source URL, source domain, Markdown content, and plain text content so the summary can be generated.</li>
+</ul>
+
+<h2>Third-party AI service</h2>
+<p>The optional AI summary feature is disabled unless you configure it. When enabled, requests are sent directly from the extension to DeepSeek's API endpoint. Your use of that feature is also subject to DeepSeek's terms and privacy practices.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>contextMenus</strong> — to add the snippet save action to the right-click menu</li>
+  <li><strong>activeTab</strong> — to read the selected text on the current page</li>
+  <li><strong>scripting</strong> — to inject the content script that captures selections</li>
+  <li><strong>storage</strong> — to store local settings and auto-backups before import operations</li>
+</ul>
+
+<h2>Data export & deletion</h2>
+<p>You can export your local data as a JSON file and delete individual snippets, individual notes, or clear local databases from the extension's Settings page at any time.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, we will update the "Last updated" date above.</p>
+
+<h2>Contact</h2>
+<p>If you have questions, open an issue on the project's GitHub repository.</p>
+</body>
+</html>
